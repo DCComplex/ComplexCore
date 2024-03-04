@@ -1,4 +1,4 @@
-package us.dccomplex.complexcore.files;
+package us.dccomplex.core.complexcore.files;
 
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.FileConfiguration;

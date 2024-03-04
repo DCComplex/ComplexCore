@@ -1,4 +1,4 @@
-package us.dccomplex.complexcore.apis;
+package us.dccomplex.core.complexcore.apis;
 
 public interface ManagerAPI {
 }

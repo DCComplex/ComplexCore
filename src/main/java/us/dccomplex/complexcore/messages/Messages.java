@@ -1,4 +1,4 @@
-package us.dccomplex.complexcore.messages;
+package us.dccomplex.core.complexcore.messages;
 
 public class Messages {
 }

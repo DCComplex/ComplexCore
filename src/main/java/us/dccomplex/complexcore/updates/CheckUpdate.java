@@ -1,11 +1,10 @@
-package us.dccomplex.complexcore.updates;
+package us.dccomplex.core.complexcore.updates;
 
-import org.bukkit.Bukkit;
 import org.kohsuke.github.GHRepository;
 import org.kohsuke.github.GitHub;
 import java.io.IOException;
 import org.kohsuke.github.GHRelease;
-import us.dccomplex.complexcore.ComplexCore;
+import us.dccomplex.core.complexcore.ComplexCore;
 
 public final class CheckUpdate {
     private final static String currentVersion = ComplexCore.getPlugin().getDescription().getVersion();;

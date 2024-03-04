@@ -1,12 +1,12 @@
-package us.dccomplex.complexcore;
+package us.dccomplex.core.complexcore;
 
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
-import us.dccomplex.complexcore.apis.CoreAPI;
-import us.dccomplex.complexcore.apis.ManagerAPI;
-import us.dccomplex.complexcore.files.CustomFile;
-import us.dccomplex.complexcore.updates.CheckUpdate;
-import us.dccomplex.complexcore.versions.Core_1_16_5;
+import us.dccomplex.core.complexcore.apis.CoreAPI;
+import us.dccomplex.core.complexcore.apis.ManagerAPI;
+import us.dccomplex.core.complexcore.files.CustomFile;
+import us.dccomplex.core.complexcore.updates.CheckUpdate;
+import us.dccomplex.core.complexcore.versions.Core_1_16_5;
 
 public final class ComplexCore extends JavaPlugin {
     public static ComplexCore plugin;

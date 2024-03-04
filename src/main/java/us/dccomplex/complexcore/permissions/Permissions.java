@@ -1,4 +1,4 @@
-package us.dccomplex.complexcore.permissions;
+package us.dccomplex.core.complexcore.permissions;
 
 public class Permissions {
 }
