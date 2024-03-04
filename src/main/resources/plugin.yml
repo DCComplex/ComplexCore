@@ -1,0 +1,8 @@
+name: ComplexCore
+version: '${project.version}'
+main: us.dccomplex.complexcore.ComplexCore
+api-version: '1.16'
+load: STARTUP
+authors: [DCComplex]
+description: DCComplex Core
+website: https://github.com/DCComplex
