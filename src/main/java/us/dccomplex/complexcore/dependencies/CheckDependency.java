@@ -6,32 +6,36 @@ import us.dccomplex.complexcore.listeners.DependListener;
 
 public class CheckDependency {
 
-    public static void checkCore(String plugintext) {
+    private static DependListener listener = new DependListener(); // Instantiate the listener
+
+    public static void checkCore(String pluginText) {
         try {
-            if (!staticCore(plugintext)) {
-                ComplexCore.getPlugin().getLogger().warning(pluginRequiredMSG(plugintext));
+            if (!staticCore(pluginText)) {
+                ComplexCore.getPlugin().getLogger().warning(pluginRequiredMSG(pluginText));
                 Bukkit.getPluginManager().disablePlugin(ComplexCore.getPlugin());
                 return;
             }
-            Bukkit.getPluginManager().registerEvents(ComplexCore.getListener(), ComplexCore.getPlugin());
+            registerEvent();
         } catch (Exception e) {
-            ComplexCore.getPlugin().getLogger().warning(noPluginMSG(plugintext,e));
+            ComplexCore.getPlugin().getLogger().warning(noPluginMSG(pluginText, e));
             e.printStackTrace();
             Bukkit.getPluginManager().disablePlugin(ComplexCore.getPlugin());
         }
     }
 
-    public static boolean staticCore(String plugintext) {
-        return Bukkit.getPluginManager().getPlugin(plugintext) != null;
+    public static boolean staticCore(String pluginText) {
+        return Bukkit.getPluginManager().getPlugin(pluginText) != null;
     }
 
-    public static String pluginRequiredMSG(String plugintext){
-        return "Could not find "+plugintext+"! This plugin is required.";
+    public static String pluginRequiredMSG(String pluginText){
+        return "Could not find " + pluginText + "! This plugin is required.";
     }
 
-    public static String noPluginMSG(String plugintext,Exception e){
-        return "An error occurred while checking for "+plugintext+": "+e.getMessage();
+    public static String noPluginMSG(String pluginText, Exception e){
+        return "An error occurred while checking for " + pluginText + ": " + e.getMessage();
     }
 
-
+    public static void registerEvent(){
+        Bukkit.getPluginManager().registerEvents(listener, ComplexCore.getPlugin());
+    }
 }

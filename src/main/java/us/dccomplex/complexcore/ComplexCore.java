@@ -11,7 +11,7 @@ import us.dccomplex.complexcore.versions.Core_1_16_5;
 
 public final class ComplexCore extends JavaPlugin {
     public static ComplexCore plugin;
-    public static DependListener listener;
+    public static DependListener listener; // Declare the DependListener
 
     public static DependListener getListener() {
         return listener;
@@ -21,6 +21,7 @@ public final class ComplexCore extends JavaPlugin {
 
     @Override
     public void onEnable() {
+        listener = new DependListener(); // Initialize the DependListener
         setEnable();
 
     }
@@ -73,7 +74,4 @@ public final class ComplexCore extends JavaPlugin {
     public String getServerVersion(){
         return Bukkit.getVersion();
     }
-
-
-
 }

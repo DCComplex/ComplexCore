@@ -2,6 +2,7 @@ package us.dccomplex.complexcore.apis;
 
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandSender;
+import org.bukkit.plugin.Plugin;
 import us.dccomplex.complexcore.ComplexCore;
 
 public class CoreAPI {
@@ -46,6 +47,16 @@ public class CoreAPI {
             ComplexCore.getPlugin().getLogger().severe("Failed to setup "+ComplexCore.getPlugin().getDescription().getName()+"!. Running non-compatible version! " + ComplexCore.getPlugin().getServerVersion());
             Bukkit.getPluginManager().disablePlugin(ComplexCore.getPlugin());
         }
+    }
+
+    public static void showAuthorAPI(CommandSender sender, Plugin plugin){
+        sender.sendMessage("§8---------------------------------------");
+        sender.sendMessage("§6" + plugin.getDescription().getName() + " Information");
+        sender.sendMessage("");
+        sender.sendMessage("§7» §fPlugin Version: §e" + plugin.getDescription().getVersion());
+        sender.sendMessage("§7» §fAuthor: §e" + plugin.getDescription().getAuthors().get(0));
+        sender.sendMessage("§7» §fDescription: " + plugin.getDescription().getDescription());
+        sender.sendMessage("§8---------------------------------------");
     }
 
 }
