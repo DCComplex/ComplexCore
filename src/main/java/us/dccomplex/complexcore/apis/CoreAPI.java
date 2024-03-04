@@ -1,8 +1,8 @@
-package us.dccomplex.core.complexcore.apis;
+package us.dccomplex.complexcore.apis;
 
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandSender;
-import us.dccomplex.core.complexcore.ComplexCore;
+import us.dccomplex.complexcore.ComplexCore;
 
 public class CoreAPI {
 

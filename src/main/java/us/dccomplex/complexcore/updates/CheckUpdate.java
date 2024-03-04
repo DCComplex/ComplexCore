@@ -1,15 +1,15 @@
-package us.dccomplex.core.complexcore.updates;
+package us.dccomplex.complexcore.updates;
 
 import org.kohsuke.github.GHRepository;
 import org.kohsuke.github.GitHub;
 import java.io.IOException;
 import org.kohsuke.github.GHRelease;
-import us.dccomplex.core.complexcore.ComplexCore;
+import us.dccomplex.complexcore.ComplexCore;
 
 public final class CheckUpdate {
     private final static String currentVersion = ComplexCore.getPlugin().getDescription().getVersion();;
 
-    private final static String GitK = "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";
+    private final static String GitK = "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";
 
     private static String checkupdate;
     private static String checkupdateString;

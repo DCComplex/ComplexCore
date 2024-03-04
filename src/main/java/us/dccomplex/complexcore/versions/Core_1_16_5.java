@@ -1,6 +1,6 @@
-package us.dccomplex.core.complexcore.versions;
+package us.dccomplex.complexcore.versions;
 
-import us.dccomplex.core.complexcore.apis.ManagerAPI;
+import us.dccomplex.complexcore.apis.ManagerAPI;
 
 public class Core_1_16_5 implements ManagerAPI {
 }

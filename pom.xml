@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>us.dccomplex</groupId>
-  <artifactId>ComplexCore</artifactId>
+  <artifactId>complexcore</artifactId>
   <version>1.0</version>
   <packaging>jar</packaging>
 
@@ -16,8 +16,8 @@
     <java.version>1.8</java.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
-    <url>https://github.com/DCComplex</url>
 
+    <url>https://github.com/DCComplex</url>
     <build>
     <plugins>
       <plugin>
@@ -88,5 +88,4 @@
             <url>https://maven.pkg.github.com/DCComplex/ComplexCore</url>
         </repository>
     </distributionManagement>
-
 </project>
