@@ -10,7 +10,7 @@ import us.dccomplex.complexcore.ComplexCore;
 public final class CheckUpdate {
     private final static String currentVersion = ComplexCore.getPlugin().getDescription().getVersion();;
 
-    private final static String GitK = "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";
+    private final static String GitK = "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";
 
     private static String checkupdate;
     private static String checkupdateString;
