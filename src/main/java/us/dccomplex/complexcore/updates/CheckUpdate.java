@@ -7,7 +7,7 @@ import org.kohsuke.github.GHRelease;
 import us.dccomplex.complexcore.ComplexCore;
 
 public final class CheckUpdate {
-    private final static String currentVersion = ComplexCore.getPlugin().getDescription().getVersion();;
+    private final static String currentVersion = ComplexCore.getPlugin().getDescription().getVersion();
 
     private final static String GitK = "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";
 
