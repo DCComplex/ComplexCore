@@ -9,7 +9,7 @@ import us.dccomplex.complexcore.ComplexCore;
 public final class CheckUpdate {
     private final static String currentVersion = ComplexCore.getPlugin().getDescription().getVersion();
 
-    private final static String GitK = "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";
+    private final static String GitK = "api-key";
 
     private static String checkupdate;
     private static String checkupdateString;
@@ -17,7 +17,7 @@ public final class CheckUpdate {
     private static void checkForUpdates() {
         String latestVersion = fetchLatestVersionFromGitHub();
         if (latestVersion != null && !latestVersion.equals(currentVersion)) {
-            ComplexCore.getPlugin().getLogger().info("A new version (" + latestVersion + ") of "+ComplexCore.getPlugin().getDescription().getName()+" is available!");
+            ComplexCore.getPlugin().getLogger().warning("A new version (" + latestVersion + ") of "+ComplexCore.getPlugin().getDescription().getName()+" is available!");
         }
     }
     private static String fetchLatestVersionFromGitHub() {
