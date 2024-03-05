@@ -11,7 +11,7 @@ public class UpdateCheckAPI {
     public static void checkForPluginUpdateAPI(String gitHubToken, String username, String repository, String currentVersion, Plugin plugin) {
         String latestVersion = fetchLatestVersionFromGitHubAPI(gitHubToken, username, repository,plugin);
         if (latestVersion != null && !latestVersion.equals(currentVersion)) {
-            plugin.getLogger().info("A new version (" + latestVersion + ") of your plugin is available!");
+            plugin.getLogger().info("There is a newer plugin version available: " + latestVersion + ", you're on:"+ currentVersion);
         }
     }
 
