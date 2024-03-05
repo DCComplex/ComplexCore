@@ -17,7 +17,7 @@ public final class CheckUpdate {
     private static void checkForUpdates() {
         String latestVersion = fetchLatestVersionFromGitHub();
         if (latestVersion != null && !latestVersion.equals(currentVersion)) {
-            ComplexCore.getPlugin().getLogger().warning("A new version (" + latestVersion + ") of "+ComplexCore.getPlugin().getDescription().getName()+" is available!");
+            ComplexCore.getPlugin().getLogger().warning("A new version (" + latestVersion + ") of plugin is available!");
         }
     }
     private static String fetchLatestVersionFromGitHub() {
